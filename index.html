@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32 Друга</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="img/logo_32druga.png" class="img"></a>
+        <div class="logo">
+            <a href="#">32 Друга</a>
+        </div>
+    </header>
+    <section id="navigation" class="navigation">
+        <h2>Навигация</h2>
+        <ul class="nav-links">
+            <li><a href="#service">Услуги и цены</a></li>
+            <li><a href="#on_map">Поиск клиники</a></li>
+            <li><a href="#appointment">Запись на приём</a></li>
+            <li><a id="subscribe-btn">Рассылка</a</li>
+        </ul>
+    </section>
+
+    <div id="subscription-modal" class="modal">
+        <div class="modal-content">
+            <h2>Подписка на рассылку</h2>
+            <input type="email" id="email-input" placeholder="Введите email">
+            <button id="confirm-subscribe" disabled>Подтвердить</button>
+        </div>
+    </div>
+
+    <div id="cookie-banner">
+        <p>Мы используем cookie-файлы. Продолжая пользоваться сайтом, вы соглашаетесь с их использованием.</p>
+        <button id="accept-cookies">Принять</button>
+    </div>
+
+    <div id="grid-container" class="grid-container">
+        <div class="item1">
+            <h2>Коротко о нас</h2>
+            <div class="div-text">
+                Стоматология <span class="druga">«32 Друга»</span> в Ростове-на-Дону предоставляет полный спектр стоматологических услуг: лечение, имплантация, протезирование, исправление прикуса и др. Современное оборудование, опытные специалисты и комфортные условия делают визит быстрым и удобным.
+            </div>
+        </div>
+        <div class="item2">
+
+        </div>
+        <div class="item3">
+            <h3>Количество сотрудников</h3>
+            <div class="div-text">
+                Наших специалистов уже более <span class="human"> 20 человек </span>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" data-aos="fade-up">
+        <h2>Добро пожаловать в стоматологическую клинику "32 Друга"!</h2>
+        <p>В клинике «32 Друга» вы можете получить весь спектр стоматологических услуг: от профессиональной чистки и пломбирования кариеса, до хирургических операций в том числе имплантации зубов и протезирования.</p>
+        <br>
+        <p>Стоматолог - ортодонт исправит прикус, выровняет зубы в зубном ряду относительно друг друга, причем не только для того, чтобы улучшить внешний вид пациента, но и для улучшения функционирования всей жевательной системы в целом.</p>
+        <br>
+        <p>Все манипуляции осуществляются высококлассными специалистами на современном оборудовании и с применением качественных, проверенных на безопасность материалов.</p>
+        <br>
+        <p>Пациенты располагаются в креслах повышенной комфортности, а специалисты работают быстро и эффективно.</p>
+        <br>
+    </section>
+
+
+    <section id="service" class="grid" data-aos="fade-up">
+        <article class="service-card" onclick="toggleCard(this)">
+            <div class="icon">
+                <img src="img/service/pain.png" alt="Service 1">
+            </div>
+            <h3 class="title">Лечение</h3>
+            <div class="details">
+                <p>Кариес и пульпит больше не будет Вас беспокоить</p>
+                <p>Price: $100</p>
+            </div>
+        </article>
+        <article class="service-card" onclick="toggleCard(this)">
+            <div class="icon">
+                <img src="img/service/reset.webp" alt="Service 2">
+            </div>
+            <h3 class="title">Восстановаление</h3>
+            <div class="details">
+                <p>Осколы зубов</p>
+                <p>Price: $150</p>
+            </div>
+        </article>
+        <article class="service-card" onclick="toggleCard(this)">
+            <div class="icon">
+                <img src="img/service/delete.png" alt="Service 1">
+            </div>
+            <h3 class="title">Удаление</h3>
+            <div class="details">
+                <p>Удаление зубов мудрости</p>
+                <p>Price: $100</p>
+            </div>
+        </article>
+        <article class="service-card" onclick="toggleCard(this)">
+            <div class="icon">
+                <img src="img/service/implant.png" alt="Service 1">
+            </div>
+            <h3 class="title">Имплантация</h3>
+            <div class="details">
+                <p>У нас есть много видов имплантации зубов</p>
+                <p>Price: $100</p>
+            </div>
+        </article>
+        <article class="service-card" onclick="toggleCard(this)">
+            <div class="icon">
+                <img src="img/service/white.webp" alt="Service 1">
+            </div>
+            <h3 class="title">Отбеливание</h3>
+            <div class="details">
+                <p>Отбеливание зубов, очистка зубов</p>
+                <p>Price: $100</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="calculator" data-aos="fade-up">
+        <h2 class="calc">Калькулятор услуг</h2>
+        <button class="btn_calc" onclick="toggleServices()">Выбрать услугу</button>
+        <ul class="service-list" id="serviceList" style="display:none;">
+            <li onclick="selectService('Чистка зубов', 2000)">Чистка зубов</li>
+            <li onclick="selectService('Пломбирование', 3500)">Пломбирование</li>
+            <li onclick="selectService('Удаление зуба', 5000)">Удаление зуба</li>
+            <li onclick="selectService('Имплантация', 30000)">Имплантация</li>
+        </ul>
+        <h3>Выбранные услуги:</h3>
+        <ul class="selected-services" id="selectedServices"></ul>
+        <p class="sum">Итого: <span id="totalSum">0</span> руб.</p>
+    </section>
+
+    <section id="reviews" class="reviews" data-aos="fade-up">
+        <h2>Что о нас говорят люди</h2>
+        <div class="carousel">
+            <button type="button" class="button" id="prev" aria-label="Previous Review">&#8592;</button>
+            <div class="carousel-track">
+                <article class="review-card active">
+                    <div class="icon">
+                        <img src="img/user_icon.png" alt="User Icon">
+                    </div>
+                    <p class="text">Я обратилась по острой боли...</p>
+                    <time class="date" datetime="2024-12-08">08.12.2024</time>
+                </article>
+
+                <article class="review-card">
+                    <div class="icon">
+                        <img src="img/user_icon.png" alt="User Icon">
+                    </div>
+                    <p class="text">Отличный сервис и обслуживание!</p>
+                    <time class="date" datetime="2024-12-01">01.12.2024</time>
+                </article>
+
+                <article class="review-card">
+                    <div class="icon">
+                        <img src="img/user_icon.png" alt="User Icon">
+                    </div>
+                    <p class="text">Быстро помогли, спасибо!</p>
+                    <time class="date" datetime="2024-11-25">25.11.2024</time>
+                </article>
+            </div>
+            <button type="button" class="button" id="next" aria-label="Next Review">&#8594;</button>
+        </div>
+    </section>
+
+    <section id="on_map" class="map" data-aos="fade-up">
+        <h2 class="map_text">Наши клиники на карте</h2>
+        <div class="map_container">
+            <div style="position:relative;overflow:hidden;">
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=39.700911%2C47.255130&mode=search&sctx=ZAAAAAgBEAAaKAoSCUZ4exAC3ENAEdqSVRFunEdAEhIJ%2BWcG8YEd1z8RmRHeHoSAwj8iBgABAgMEBSgKOABA6IgGSAFqAnJ1nQHNzMw9oAEAqAEAvQEi56OtwgEL38qi1wShwaXzlQaCAg0zMiDQtNGA0YPQs9CwigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=39.700911%2C47.255130&sspn=0.314422%2C0.125757&text=32%20%D0%B4%D1%80%D1%83%D0%B3%D0%B0&z=12.2" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment" class="make_appointment" data-aos="fade-up">
+        <h2 class="make_appointment_text">Мы ждём Вас в нашей клинике!</h2>
+        <button class="appointment_button" onclick="window.location.href='https://booking.medflex.ru/?user=b826e8ad86d9fbfa803b8d951a631602&source=3'">Записаться</button>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Контакты</h2>
+        <p>Email: example@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 "32 Друга"</p>
+    </footer>
+</body>
+</html>

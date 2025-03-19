@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'RMB';
+    src: url('font/ofont.ru_Montserrat.ttf');
+}
+
+body {
+    font-family: RMB;
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;
+    margin-top: 6%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    color: rgb(155, 50, 50);
+    padding: 20px;
+    text-align: center;
+    background-color: #1E1E1C;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation {
+    background-color: #70ffee;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    font-family: RMB;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF5800;
+    border-bottom: 1px solid #FF5800;
+}
+
+.grid-container {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 10px;
+    width: 1000px;
+    height: 400px;
+    justify-content: center;
+    align-items: start;
+}
+
+.item1 {
+    width: 500px;
+    background-color: #191919;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 20px;
+    color: white;
+}
+
+.item2 {
+    width: 500px;
+    height: 350px;
+    background-color: #191919;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    
+}
+
+.item3 {
+    width: 500px;
+    background-color: #70ffee;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 20px;
+}
+
+.img{
+    background: white;
+    border-radius: 100%;
+    height: 50px;
+}
+
+.druga{
+    font-size: large;
+    font-family: RMB;
+}
+
+.div-text{
+    text-align: justify;
+}
+
+.human{
+    color: #ffffff;
+    background-color: #f08727;
+}
+
+section {
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.slider {
+    margin: 10px auto;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.reviews {
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.button {
+    background: #1e1e1c;;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+}
+
+.carousel-track {
+    display: flex;
+    justify-content: center;
+}
+
+.review-card {
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #70ffee, #00afff);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transform: scale(0.9);
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.review-card.active {
+    transform: scale(1.1);
+}
+
+.review-card .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review-card .icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.review-card .text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.review-card .date {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Карточки услуг */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+}
+.service-card {
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #70ffee;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.service-card.expanded {
+    transform: scale(1.1);
+}
+.service-card .icon {
+    background: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.service-card .icon img {
+    width: 40px;
+    height: 40px;
+}
+.service-card .details {
+    display: none;
+}
+.service-card.expanded .details {
+    display: block;
+}
+.service-card.expanded .title, .service-card.expanded .icon {
+    display: none;
+}
+
+/* Калькулятор услуг */
+.calc {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn_calc {
+    background: linear-gradient(270deg, #70ffee, #00afff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'RMB', Arial, sans-serif;
+    display: block;
+    margin: 0 auto;
+}
+
+.service-list, .selected-services {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+.service-list li, .selected-services li {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    text-align: center;
+}
+.sum {
+    font-weight: bold;
+    margin-top: 20px;
+}
+.remove {
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Карта */
+.map_text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.map_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.make_appointment_text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.appointment_button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #00bcd4;
+    background-color: white;
+    border: 2px solid #00bcd4;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.appointment-button:hover {
+    background-color: #00bcd4;
+    color: white;
+}
+
+/* Стили модального окна */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+#email-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #00bcd4;
+    border-radius: 5px;
+}
+
+#confirm-subscribe {
+    background: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#confirm-subscribe:disabled {
+    background: #ccc;
+}
+
+/* Cookie баннер */
+#cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #00bcd4;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+#cookie-banner.show {
+    display: block;
+    opacity: 1;
+}
