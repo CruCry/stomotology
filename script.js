@@ -161,22 +161,27 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Вы подписались на рассылку!");
         modal.classList.remove("show");
     });
-});
 
-
-document.addEventListener("DOMContentLoaded", function () {
     const cookieBanner = document.getElementById("cookie-banner");
     const acceptCookies = document.getElementById("accept-cookies");
+
+    // Проверка на существование элементов
+    if (!cookieBanner || !acceptCookies) {
+        console.error("Элементы баннера или кнопки не найдены!");
+        return;
+    }
 
     // Проверка localStorage и отображение баннера
     if (!localStorage.getItem("cookiesAccepted")) {
         setTimeout(() => {
-            cookieBanner.style.display = "block";
-        }, 500); // Добавлена небольшая задержка для гарантированного показа
+            cookieBanner.classList.add("show"); // Добавляем класс для анимации
+        }, 500); // Задержка для показа
     }
 
+    // Обработчик клика по кнопке "Принять"
     acceptCookies.addEventListener("click", () => {
         localStorage.setItem("cookiesAccepted", "true");
-        cookieBanner.style.display = "none";
+        cookieBanner.classList.remove("show"); // Скрываем баннер с анимацией
     });
 });
+
