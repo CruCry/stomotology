@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cookieBanner = document.getElementById("cookie-banner");
     const acceptCookies = document.getElementById("accept-cookies");
 
-    // Проверка на существование элементов
+    // добавила проверку на существование элементов
     if (!cookieBanner || !acceptCookies) {
         console.error("Элементы баннера или кнопки не найдены!");
         return;
