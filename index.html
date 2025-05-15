@@ -27,7 +27,7 @@
             <li><a href="#service">Услуги</a></li>
             <li><a href="#on_map">Карта</a></li>
             <li><a href="#appointment">Запись</a></li>
-            <li><a id="subscribe-btn">Рассылка</a</li>
+            <li><a id="subscribe-btn">Рассылка</a></li>
         </ul>
     </section>
 
@@ -38,8 +38,6 @@
             <button id="confirm-subscribe" disabled>Подтвердить</button>
         </div>
     </div>
-
-    
 
     <div id="grid-container" class="grid-container">
         <div class="item1">
@@ -61,16 +59,15 @@
 
     <section id="about" data-aos="fade-up">
         <h2>Добро пожаловать в стоматологическую клинику "32 Друга"!</h2>
-        <p>В клинике «32 Друга» вы можете получить весь спектр стоматологических услуг: от профессиональной чистки и пломбирования кариеса, до хирургических операций в том числе имплантации зубов и протезирования.</p>
-        <br>
-        <p>Стоматолог - ортодонт исправит прикус, выровняет зубы в зубном ряду относительно друг друга, причем не только для того, чтобы улучшить внешний вид пациента, но и для улучшения функционирования всей жевательной системы в целом.</p>
+        <p>В клинике большая часть сотрудников с высоким стажем.</p>
         <br>
         <p>Все манипуляции осуществляются высококлассными специалистами на современном оборудовании и с применением качественных, проверенных на безопасность материалов.</p>
+        <br>
+        <p>Для каждого клиента выдаётся гарантия.</p>
         <br>
         <p>Пациенты располагаются в креслах повышенной комфортности, а специалисты работают быстро и эффективно.</p>
         <br>
     </section>
-
 
     <section id="service" class="grid" data-aos="fade-up">
         <article class="service-card" onclick="toggleCard(this)">
@@ -99,7 +96,7 @@
             </div>
             <h3 class="title">Удаление</h3>
             <div class="details">
-                <p>Удаление зубов мудрости</p>
+                <p>Удаление зубов, зубов мудрости</p>
                 <p>Цена: 1500 ₽</p>
             </div>
         </article>
@@ -119,8 +116,8 @@
             </div>
             <h3 class="title">Отбеливание</h3>
             <div class="details">
-                <p>Удаление наддесневых и поддесневых зубных отложений в области 1 зуба</p>
-                <p>Цена: 220 ₽</p>
+                <p>Химическое, лазерное и ультразвуковое отбеливание</p>
+                <p>Цена: 1490 ₽</p>
             </div>
         </article>
     </section>
@@ -129,7 +126,7 @@
         <h2 class="calc">Калькулятор услуг</h2>
         <button class="btn_calc" onclick="toggleServices()">Выбрать услугу</button>
         <ul class="service-list" id="serviceList" style="display:none;">
-            <li onclick="selectService('Чистка зуба', 220)">Чистка зуба</li>
+            <li onclick="selectService('Отбеливание', 1490)">Отбеливание</li>
             <li onclick="selectService('Лечение зуба', 3500)">Лечение зуба</li>
             <li onclick="selectService('Удаление зуба', 5000)">Удаление зуба</li>
             <li onclick="selectService('Имплантация', 23000)">Имплантация</li>
@@ -146,26 +143,26 @@
             <div class="carousel-track">
                 <article class="review-card active">
                     <div class="icon">
-                        <img src="img/user_icon.png" alt="User Icon">
+                        <img src="img/4stars.png" alt="Stars">
                     </div>
-                    <p class="text">Я обратилась по острой боли...</p>
-                    <time class="date" datetime="2024-12-08">08.12.2024</time>
+                    <p class="text">Много лет хожу в эту клинику, но лишь потому, что там работает хороший стоматолог, к которому я готова ехать на другой конец города. Стоимость услуг довольно высокая, оборудование хорошее.</p>
+                    <time class="date" datetime="2024-12-08">17.01.2022</time>
                 </article>
 
                 <article class="review-card">
                     <div class="icon">
-                        <img src="img/user_icon.png" alt="User Icon">
+                        <img src="img/5stars.png" alt="Stars">
                     </div>
-                    <p class="text">Отличный сервис и обслуживание!</p>
-                    <time class="date" datetime="2024-12-01">01.12.2024</time>
+                    <p class="text">Замечательная стоматология. Более 10-ти лет всей семьей пользуемся ее услугами . Замечательные грамотные врачи, демократичные цены и лучшие администраторы ! Рекомендую</p>
+                    <time class="date" datetime="2024-12-01">22.04.2025</time>
                 </article>
 
                 <article class="review-card">
                     <div class="icon">
-                        <img src="img/user_icon.png" alt="User Icon">
+                        <img src="img/5stars.png" alt="Stars">
                     </div>
-                    <p class="text">Быстро помогли, спасибо!</p>
-                    <time class="date" datetime="2024-11-25">25.11.2024</time>
+                    <p class="text">Определенно рекомендую к посещению! Очень вежливый и компетентный персонал. Врач-хирург ведет работу очень аккуратно, с отсутствием неприятных ощущений. Однозначно буду посещать клинику ещё по необходимости!</p>
+                    <time class="date" datetime="2024-11-25">10.04.2025</time>
                 </article>
             </div>
             <button type="button" class="button" id="next" aria-label="Next Review">&#8594;</button>
@@ -189,6 +186,7 @@
     <footer>
         <h2>Контакты</h2>
         <p>Телефон: +7 961-323-23-28</p>
+        <a href="https://t.me/Stomatologia_32_Dryga_bot"><img class="tg" src="img/icon/tg.png">  Telegram Бот</a>
         <p>&copy; 2025 "32 Друга"</p>
     </footer>
     <script src="script.js"></script>
